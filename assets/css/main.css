@@ -129,7 +129,7 @@ body {
 .card-modern {
   background: var(--card-bg);
   color: var(--text-primary);
-  border-radius: 16px;
+  border-radius: 1rem;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.12);
   border: none;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -138,10 +138,11 @@ body {
   background-color: rgba(17, 25, 40, 0.75);
   border-radius: 12px; */
   border: 1px solid rgba(255, 255, 255, 0.125);
+  cursor: pointer;
 }
 
 .card-modern:hover {
-  /* transform: translateY(-4px); */
+  transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 

@@ -137,7 +137,28 @@
                 </div>
               </div>
             </div>
-            <!-- Repeat similar cards -->
+            <div class="col-md-4">
+              <div class="card-modern border-0">
+                <div class="bg-dark text-white p-5 text-center">
+                  <i class="bi bi-file-earmark-code fs-1"></i>
+                </div>
+                <div class="p-4">
+                  <h6>Vue js Crash course Mastery 2025</h6>
+                  <small class="text-muted">4.5 ⭐ • 8.2k students</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-modern border-0">
+                <div class="bg-dark text-white p-5 text-center">
+                  <i class="bi bi-file-earmark-code fs-1"></i>
+                </div>
+                <div class="p-4">
+                  <h6>React Mastery 2025</h6>
+                  <small class="text-muted">4.9 ⭐ • 8.2k students</small>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -145,36 +166,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/ThemeToggle.js"></script>
-    <script>
-      const sidebar = document.getElementById("sidebar");
-      const mainContent = document.getElementById("mainContent");
-      const toggleBtn = document.getElementById("toggleBtn");
-      const d_done = document.getElementById("d-done");
-
-      sidebar.addEventListener("click", () => {
-        sidebar.classList.toggle("collapsed");
-        mainContent.classList.toggle("expanded");
-
-        // Check if sidebar is NOT collapsed → means it's expanded → show logo
-        if (!sidebar.classList.contains("collapsed")) {
-          d_done.textContent = "learnCoder"; // Show brand name
-        } else {
-          d_done.textContent = ""; // Hide brand name when collapsed
-        }
-        // Mobile handling
-        if (window.innerWidth <= 992) {
-          sidebar.classList.toggle("active");
-        }
-      });
-
-      // Close sidebar on mobile when clicking outside
-      document.addEventListener("click", (e) => {
-        if (window.innerWidth <= 992 && sidebar.classList.contains("active")) {
-          if (!sidebar.contains(e.target) === false && e.target !== toggleBtn) {
-            sidebar.classList.remove("active");
-          }
-        }
-      });
-    </script>
+    <script src="assets/js/event.js"></script>
   </body>
 </html>
