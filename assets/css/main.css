@@ -1,0 +1,53 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #1b2d3e, #1b1f23);
+}
+
+/* .card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  
+} */
+
+
+/* Glassmorphism card effect */
+.card {
+    backdrop-filter: blur(16px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.1) !important;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-primary {
+
+  border: none;
+}
+
+.btn-warning {
+  background: #ffc107;
+  color: #000;
+  font-weight: bold;
+}
+
+.progress {
+  height: 8px;
+  border-radius: 10px;
+}
+
+.navbar {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
